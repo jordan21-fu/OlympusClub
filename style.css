@@ -187,7 +187,7 @@ a:hover{
 }
 .seccionCambio{
     width: 100%;
-    height: 100vh;
+    height: auto;
     align-items: center;
     position: relative;
     padding-top: 5%;
@@ -349,6 +349,7 @@ h2#tituloDos{
 }
 .TituloYFoto{
     align-items: center;
+
     position: relative;
     width: 100%;
     height: 100%;
@@ -366,8 +367,10 @@ h2#tituloDos{
 }
 
 .Foto{
+    display: grid;
     width: 100%;
     justify-items: center;
+    position: relative;
 }
 .Horario{
     position: absolute;
@@ -379,6 +382,7 @@ h2#tituloDos{
     drop-shadow(0 0 15px rgba(255, 190, 50, 0.7));
     transition: transform 0.5s ease;
 }
+
 .Horario:hover{
     transform: translateY(-10px);
     filter: drop-shadow(0 0 17px black);
@@ -532,6 +536,8 @@ h2#tituloDos{
     width: 100%;
     position: relative;
     height: 100vh;
+    align-items: center;
+    justify-items: center;
 }
 .ContactoTitulo{
     font-family: 'Bebas Neue', sans-serif;
@@ -543,6 +549,26 @@ h2#tituloDos{
     font-size: 90px;
 
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-btn{
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
 .TextoContacto{
     letter-spacing: 2px;
     position: relative;
@@ -556,18 +582,309 @@ h2#tituloDos{
     border-radius: 30px;
     padding: 10px 0;
 }
-.WhatsApp{
+span.WhatsApp{
     position: relative;
     color: white;
     text-align: center;
-    padding-top: 2%;
+    margin: 0;
+    font-size: 10px;
+    padding-bottom: 0;
     font-size: 50px;
 }
 .NumeroWhats{
     font-size: 40px;
 }
 .contactosVarios{
-    width: 100%;
+    margin-top: 15px;
+    width: 85.5%;
+    border-radius: 50px;
+    position: relative;
+    justify-items: center;
+    background-color: #00000052;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.068);
+}
+
+#form{
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.field {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.Numero{
+    display: block;
+    margin: 0;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.433);
+}
+.field label {
+    display: block;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+}
+
+.field input {
+    display: block;
+    width: 400px;
+    line-height: 1.5;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+textarea{
+    outline: 4px solid rgba(255, 166, 0, 0.186);
+    
+}
+.field2{
+    position: relative;;
+    color: white;
+    margin-top: 10px;
+}
+.field2 label{
+    display: block;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+input{
+    outline: 4px solid rgba(255, 166, 0, 0.186);
+}
+input:focus{
+    outline: 3px solid orange;
+}
+
+textarea:focus{
+    outline: 3px solid orange;
+    
+}
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 19px;
+    background: linear-gradient(#ffbc3f, #282210);
+    color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid white;
+    align-items: center;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.Foto{
+    text-align: center;
+    flex-direction: column-reverse;
+}
+@media screen and (max-width:1700px) {
+    .tituloPrincipal{
+        font-size: 55px;
+        text-align: left;
+        width: 25%;
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 1148px) {
+    .fondo{
+        object-position: -2500px 0;
+    }
+    .menu{
+        display: none;
+    }
+    ul#menu.menu.desactivado{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        border-radius: 0;
+    }
+    .menu-btn{
+        position: static;
+        z-index: 99;
+        display: block;
+        padding-left: 10%;
+    }
+    .menu.active{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px ;
+        margin: 0;
+        z-index: 10;
+        border-radius: 20px;
+        justify-content:center;
+        gap: 10px;
+    }
+    .menu.active li{
+        flex-wrap: wrap;
+        padding: 10px;
+        background: #000000ef;
+        width: 40%;
+        margin:0;
+        border-radius: 40px;
+        font-size: 24px;
+        text-align: center;
+        border: 2px solid rgba(221, 169, 27, 0.726);
+        outline:1px solid #000;
+    }
+    nav ul li{
+        margin-bottom: 0;
+    }
+    nav, nav ul, nav ul li{
+        margin: 0;
+    }
+    ul#menu.menu.active{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .Linea2{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media screen and (max-width:1044px) {
+    .tituloPrincipal{
+        font-size: 50px;
+        text-align: left;
+        width: 50%;
+        left: 8%;
+    }
+
+    .falsoBoton{
+        width: 40%;
+        left: 8%;
+    }
+    #tituloDos{
+        font-size: 50px !important;
+    }
+    .textoDos{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    .columnas{
+        display: block;
+        height: auto;
+        position: relative;
+        letter-spacing: 1.2px;
+    }
+    .porqueOlympus{
+        padding-top: 10%;
+        margin-top: 20px;
+        display: block;
+    }
+    .titulo3{
+        display: block;
+        font-size: 40px;
+    }
+    .bloqueDos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 2%;
+    }
+
+    .textoTres{
+        letter-spacing: 1.5px;
+        font-size: 17px;
+        height: auto;
+        text-align: justify;
+        align-content: center;
+        margin-bottom: 10px;
+    }
+    .textoYFilas{
+        flex-direction: column;
+    }
+    .Filas{
+        text-align: justify;
+        font-size: 14px;
+    }
+    .field2{
+        justify-items: center;
+    }
+    #message{
+        margin: 0 20%;
+        width: 60%;
+    }
+    .Contacto{
+        height: auto;
+    }
+    .TituloFoto{
+        margin: 0;
+    }
+    .Horario{
+        margin-top: 10%;
+        width: 90%;
+        left: 5%;
+    }
+    .columna{
+        position: relative;
+        width: 100%;
+        font-size: 15px;
+    }
+    .contactosVarios{
+        align-items: center;
+    }
+    #form{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .contenedorTexto{
+        width: 90%;
+        padding-top: 10%;
+    }
+    .tituloHorario{
+        padding-top: 5%;
+        font-size: 60px;
+    }
+    .field input {
+        display: block;
+        width: 250px;
+        line-height: 1.5;
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0;
+        margin-left: 0;
+        border: none;
+    }
+    .Ubicacion{
+        padding-top: 10%;
+        isolation: isolate;
+    }
+    .UbicacionEscrito2{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .ContactoTitulo{
+        font-size: 70px;
+        padding-top: 10%;
+        height: auto;
+    }
+    
+    .fondo3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }

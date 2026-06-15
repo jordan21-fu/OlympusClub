@@ -16,19 +16,25 @@
 
     <section class="primerBloque" id="inicio">
         <img src="FondoPrincipal2.png" class="fondo">
-        <div class="menu">
-            <nav>
-                <ul>
+        <div>
+            <nav class="menucompleto" onclick="abrir()">
+                <div class="menu-btn" id="menuBtn" >☰</div>
+                <ul class="menu" id="menu">
                     <li><a href="#inicio">Inicio</a></li>
-                    <div class="Linea2"></div>
+                    <li class="Linea2"></li>
+
                     <li><a href="#bloqueDos">Plan de Cambio</a></li>
-                    <div class="Linea2"></div>
+                    <li class="Linea2"></li>
+
                     <li><a href="#porqueOlympus">Porque Olympus</a></li>
-                    <div class="Linea2"></div>
+                    <li class="Linea2"></li>
+
                     <li><a href="#Horarios">Horarios</a></li>
-                    <div class="Linea2"></div>
+                    <li class="Linea2"></li>
+
                     <li><a href="#Ubicacion">Ubicacion</a></li>
-                    <div class="Linea2"></div>
+                    <li class="Linea2"></li>
+
                     <li><a href="#Contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -189,6 +195,10 @@
             </div>
             <div class="Foto">
                 <img src="horarios.png" class="Horario">
+                
+                <a href="horarios.png" target="_blank">
+                    <p>Ver Completa</p>
+                </a>
             </div>
         </div>
     </section>
@@ -219,17 +229,34 @@
             Escribinos por WhatsApp, acercate al gimnasio o seguinos en nuestras redes. Te ayudaremos a encontrar el
             plan ideal para vos y comenzar tu camino hacia mejores resultados.</p>
         <div class="contactosVarios">
-            <div class="WhatsApp">
-                <h3>WhatsApp: <br> <span class="NumeroWhats">+54 11 3434-4343</span></h3>
+            <form id="form">
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="field">
+                    <label for="whatsapp"><span class="WhatsApp">WhatsApp</span><span class="Numero">(+54 11 2222-2222)</span></label>
+                    <input type="text" name="whatsapp" id="whatsapp">
+                </div>
+                <div class="field">
+                    <label for="email">Mail</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                
+            </form>
+            <div class="field2">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="90" rows="13"></textarea>
             </div>
-            <div class="WhatsApp">
-                <h3>Contacto</h3>
-            </div>
-            <div class="WhatsApp">
-                <h3>Contacto</h3>
-            </div>
+            <input type="submit" id="button" value=" -- Enviar --" >
         </div>
     </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('0t-XUDW66uGjWDouP')
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
