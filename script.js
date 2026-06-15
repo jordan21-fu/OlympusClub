@@ -9,13 +9,17 @@ const elementos = document.querySelectorAll(
 );
 
 const observer = new IntersectionObserver((entradas) => {
+
     entradas.forEach((entrada) => {
+
         if (entrada.isIntersecting) {
             entrada.target.classList.add("visible");
-
-            observer.unobserve(entrada.target);
+        } else {
+            entrada.target.classList.remove("visible");
         }
+
     });
+
 }, {
     threshold: 0.2
 });
