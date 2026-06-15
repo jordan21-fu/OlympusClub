@@ -5,20 +5,48 @@
 const btn = document.getElementById('button');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+.addEventListener('submit', function(event) {
 
-   btn.value = 'Sending...';
+    event.preventDefault();
 
-   const serviceID = 'default_service';
-   const templateID = 'template_akyx4h4';
+    btn.value = 'Enviando...';
 
-   emailjs.sendForm(serviceID, templateID, this)
+    const serviceID = 'default_service';
+
+    // Mail que recibís vos
+    const templateConsulta = 'template_akyx4h4';
+
+    // Mail de confirmación para el usuario
+    const templateConfirmacion = 'template_tpkgveo';
+
+    emailjs.sendForm(
+        serviceID,
+        templateConsulta,
+        this
+    )
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+
+        return emailjs.sendForm(
+            serviceID,
+            templateConfirmacion,
+            this
+        );
+
+    })
+    .then(() => {
+
+        btn.value = 'Enviar Mail';
+        alert('¡Consulta enviada correctamente!');
+
+        document.getElementById('form').reset();
+
+    })
+    .catch((err) => {
+
+        btn.value = 'Enviar Mail';
+        console.error(err);
+        alert('Error al enviar el formulario');
+
     });
+
 });

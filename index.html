@@ -55,7 +55,7 @@
     <section class="bloqueDos" id="bloqueDos">
         <img src="fondo2.png" class="fondo">
         <div class="seccionCambio">
-            <div class="contenedorTexto">
+            <div class="contenedorTexto izquierda">
                 <h2 id="tituloDos">Tu cambio empieza acá</h2>
                 <p class="textoDos"> No estás acá por casualidad. Estás acá porque algo en vos quiere cambiar, aunque
                     todavía no sepas cómo. <br>
@@ -70,13 +70,13 @@
 
                     El cuerpo que querés no está lejos. Está del otro lado de empezar en serio.</p>
             </div>
-            <div class="marquee">
+            <div class="marquee derecha">
                 <div class="marquee-content">
                     OLYMPUS TRAINING CLUB • FUERZA • DISCIPLINA • CONSTANCIA • RESULTADOS •
                     OLYMPUS TRAINING CLUB • FUERZA • DISCIPLINA • CONSTANCIA • RESULTADOS •
                 </div>
             </div>
-            <section class="columnas">
+            <section class="columnas derecha">
                 <div class="columna">
                     <h2 class="titulo">1. Decisión</h2>
                     <p>Todo empieza acá.
@@ -114,12 +114,12 @@
                 </div>
             </section>
         </div>
-        <div class="porqueOlympus" id="porqueOlympus">
-            <div class="titulo3">
+        <div class="porqueOlympus " id="porqueOlympus">
+            <div class="titulo3 arriba">
                 <h3>POR QUÉ ENTRENAR EN OLYMPUS</h3>
             </div>
-            <section class="textoYFilas">
-                <div class="textoTres">
+            <section class="textoYFilas ">
+                <div class="textoTres izquierda">
                     <p>Entrenar no es solamente una cuestión física. Detrás de cada objetivo hay una decisión, un
                         esfuerzo
                         diario y la voluntad de seguir adelante incluso cuando los resultados todavía no se ven. Muchas
@@ -147,7 +147,7 @@
                     </p>
                 </div>
 
-                <div class="Filas">
+                <div class="Filas derecha">
 
                     <div class="razon">
                         <p class="MiniTitulo">Equipamiento Profesional</p>
@@ -191,44 +191,40 @@
         <img src="FondoHorario.png" class="fondo2">
         <div class="TituloYFoto">
             <div class="TituloFoto">
-                <h2 class="tituloHorario">Horarios:</h2>
+                <h2 class="tituloHorario arriba">Horarios:</h2>
             </div>
             <div class="Foto">
-                <img src="horarios.png" class="Horario">
-                
-                <a href="horarios.png" target="_blank">
-                    <p>Ver Completa</p>
-                </a>
+                <a href="horarios.png" target="_blank"><img src="horarios.png" class="Horario abajo"></a>
             </div>
         </div>
     </section>
     <div class="Ubicacion" id="Ubicacion">
         <img src="FondoHorario.png" class="fondo3">
-        <div class="ubicacionTitulo">
+        <div class="ubicacionTitulo arriba">
             <p>Ubicacion</p>
         </div>
-        <div class="mapa">
+        <div class="mapa derecha">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.610627742633!2d-58.40591706834686!3d-34.60539224022557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd458b2ac7%3A0xb436b5375159e8d!2sMegatlon%20Center!5e0!3m2!1ses!2sar!4v1781414917062!5m2!1ses!2sar"
                 width="1500" height="450" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <p class="UbicacionEscrito">DIRECCION:</p>
-        <p class="UbicacionEscrito2"><a href="https://maps.app.goo.gl/BFBQshGriysKjVGT8" target="_blank">Reconquista
+        <p class="UbicacionEscrito abajo">DIRECCION:</p>
+        <p class="UbicacionEscrito2 arriba"><a href="https://maps.app.goo.gl/BFBQshGriysKjVGT8" target="_blank">Reconquista
                 335, C1003 Cdad. Autónoma de Buenos Aires</a></p>
     </div>
     <section class="Contacto" id="Contacto">
         <img src="fondoLiso.png" class="fondo4">
-        <div class="ContactoTitulo">
+        <div class="ContactoTitulo arriba">
             <h3>Contacto</h3>
         </div>
-        <p class="TextoContacto">Ponete en contacto con nosotros <br>
+        <p class="TextoContacto derecha">Ponete en contacto con nosotros <br>
 
             Ya conocés nuestra forma de entrenar, nuestros horarios y lo que Olympus tiene para ofrecer. Ahora es
             momento de dar el siguiente paso. <br>
             Escribinos por WhatsApp, acercate al gimnasio o seguinos en nuestras redes. Te ayudaremos a encontrar el
             plan ideal para vos y comenzar tu camino hacia mejores resultados.</p>
-        <div class="contactosVarios">
+        <div class="contactosVarios izquierda">
             <form id="form">
                 <div class="field">
                     <label for="name">Nombre</label>
@@ -242,20 +238,22 @@
                     <label for="email">Mail</label>
                     <input type="text" name="email" id="email">
                 </div>
+                <div class="field2">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="90" rows="13"></textarea>
+                </div>
+                <input type="submit" id="button" value="Enviar Mail" >
                 
             </form>
-            <div class="field2">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="90" rows="13"></textarea>
-            </div>
-            <input type="submit" id="button" value=" -- Enviar --" >
         </div>
     </section>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
         emailjs.init('0t-XUDW66uGjWDouP')
     </script>
+
+    <script src="app.js"></script>
     <script src="script.js"></script>
 </body>
 

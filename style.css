@@ -137,9 +137,52 @@ nav ul li:hover{
     object-fit: cover;
 }
 
+
+
+
+
+/* Desde abajo */
+.abajo{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 2s ease;
+}
+
+/* Desde arriba */
+.arriba{
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: 2s ease;
+}
+
+/* Desde la izquierda */
+.izquierda{
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: 2s ease;
+}
+
+/* Desde la derecha */
+.derecha{
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 2s ease;
+}
+
+/* Estado visible */
+.visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+
+
+
+
 .falsoBoton{
     position: absolute;
-    width: 10%;
+    width: 15%;
 
     color: white;
     font-size: 33px;
@@ -184,6 +227,8 @@ a:hover{
     width: 100%;
     height: 210vh;
     position: relative;
+    overflow: hidden;
+
 }
 .seccionCambio{
     width: 100%;
@@ -274,6 +319,8 @@ h2#tituloDos{
     color: #ffffff;
     justify-content: center;
     justify-items: center;
+    overflow: hidden;
+
 }
 .titulo3{
     width: 100%;
@@ -346,6 +393,8 @@ h2#tituloDos{
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
+
 }
 .TituloYFoto{
     align-items: center;
@@ -631,7 +680,10 @@ span.WhatsApp{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 3px;
 }
-
+.field2{
+    grid-column: 1 / -1;
+    text-align: center;
+}
 .field input {
     display: block;
     width: 400px;
@@ -643,12 +695,14 @@ span.WhatsApp{
 }
 textarea{
     outline: 4px solid rgba(255, 166, 0, 0.186);
-    
+    grid-column: 2;
 }
 .field2{
     position: relative;;
     color: white;
     margin-top: 10px;
+    grid-column: 1 / -1;
+    width: 100%;
 }
 .field2 label{
     display: block;
@@ -669,6 +723,10 @@ textarea:focus{
     outline: 3px solid orange;
     
 }
+.Contacto{
+    height: auto;
+    padding-bottom: 2%;
+}
 input[type="submit"] {
     display: block;
     padding: 6px 30px;
@@ -678,6 +736,7 @@ input[type="submit"] {
     border-radius: 30px;
     border: 1px solid white;
     align-items: center;
+    grid-column: 1 / -1;
     cursor: pointer;
     margin: 15px 0;
 }
@@ -696,7 +755,7 @@ input[type="submit"] {
 
 @media screen and (max-width: 1148px) {
     .fondo{
-        object-position: -2500px 0;
+        object-position: 0 0 -2500px 0;
     }
     .menu{
         display: none;
@@ -820,9 +879,6 @@ input[type="submit"] {
     #message{
         margin: 0 20%;
         width: 60%;
-    }
-    .Contacto{
-        height: auto;
     }
     .TituloFoto{
         margin: 0;
