@@ -726,6 +726,7 @@ textarea:focus{
 .Contacto{
     height: auto;
     padding-bottom: 2%;
+    overflow: hidden;
 }
 input[type="submit"] {
     display: block;
@@ -824,7 +825,7 @@ input[type="submit"] {
         width: 50%;
         left: 8%;
     }
-
+    
     .falsoBoton{
         width: 40%;
         left: 8%;
@@ -857,7 +858,7 @@ input[type="submit"] {
         height: auto;
         padding-bottom: 2%;
     }
-
+    
     .textoTres{
         letter-spacing: 1.5px;
         font-size: 17px;
@@ -896,9 +897,10 @@ input[type="submit"] {
     .contactosVarios{
         align-items: center;
     }
+
     #form{
         padding: 0;
-        margin: 0;
+        margin-left: 10%;
         width: 100%;
         grid-template-columns: 1fr;
     }
@@ -942,5 +944,14 @@ input[type="submit"] {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+@media screen and (max-width:485px) {
+    .tituloPrincipal{
+        font-size: 40px;
+    }
+    .falsoBoton{
+        width: 45%;
+        font-size: 30px;
     }
 }
