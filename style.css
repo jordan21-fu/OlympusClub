@@ -135,6 +135,7 @@ nav ul li:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
 }
 
 
@@ -294,8 +295,8 @@ h2#tituloDos{
 }
 
 .columnas div:hover{
-    transform: scale(1.1);
-    margin: 0 30px;
+    transform: scale(1.05);
+    margin: 1% 1%;
     padding: 5px 0;
 }
 .titulo{
@@ -334,8 +335,9 @@ h2#tituloDos{
     width: 95%;
 }
 .textoTres{
+
     flex: 2;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.1px;
     padding-right: 5px;
     background-color: #0000004f;
@@ -585,8 +587,8 @@ h2#tituloDos{
     width: 100%;
     position: relative;
     height: 100vh;
-    align-items: center;
-    justify-items: center;
+    align-content: center;
+    justify-content: center ;
 }
 .ContactoTitulo{
     font-family: 'Bebas Neue', sans-serif;
@@ -648,10 +650,11 @@ span.WhatsApp{
     width: 85.5%;
     border-radius: 50px;
     position: relative;
-    justify-items: center;
+    justify-content: center;
     background-color: #00000052;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.068);
+    margin: 0 auto;
 }
 
 #form{
@@ -661,6 +664,7 @@ span.WhatsApp{
     justify-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 .field {
     margin-bottom: 5px;
@@ -837,11 +841,16 @@ input[type="submit"] {
         font-size: 20px;
         letter-spacing: 1.5px;
     }
+    .separador{
+        display: none;
+    }
     .columnas{
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         height: auto;
         position: relative;
         letter-spacing: 1.2px;
+        width: 95%;
     }
     .porqueOlympus{
         padding-top: 10%;
@@ -861,7 +870,7 @@ input[type="submit"] {
     
     .textoTres{
         letter-spacing: 1.5px;
-        font-size: 17px;
+        font-size: 16px;
         height: auto;
         text-align: justify;
         align-content: center;
@@ -878,7 +887,7 @@ input[type="submit"] {
         justify-items: center;
     }
     #message{
-        margin: 0 20%;
+        margin: 0 auto;
         width: 60%;
     }
     .TituloFoto{
@@ -889,20 +898,31 @@ input[type="submit"] {
         width: 90%;
         left: 5%;
     }
+    .titulo{
+        font-size: 25px;
+    }
     .columna{
+        position: relative;
+        width: 100%;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .columna4{
         position: relative;
         width: 100%;
         font-size: 15px;
     }
     .contactosVarios{
         align-items: center;
+        justify-content: center;
     }
 
     #form{
-        padding: 0;
-        margin-left: 5%;
+        padding-left: 0 !important;
         width: 100%;
         grid-template-columns: 1fr;
+        margin: 0 auto;
+        row-gap: 15px  ;
     }
     .contenedorTexto{
         width: 90%;
@@ -911,6 +931,9 @@ input[type="submit"] {
     .tituloHorario{
         padding-top: 5%;
         font-size: 60px;
+    }
+    .TextoContacto{
+        font-size: 17px;
     }
     .field input {
         display: block;
@@ -922,6 +945,22 @@ input[type="submit"] {
         margin: 0;
         margin-left: 0;
         border: none;
+    }
+    .field label {
+        display: block;
+        font-size: 30px;
+        color: #ffffff;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 3px;
+    }
+    .field .WhatsApp{
+        font-size: 30px;
+    }
+    .field .Numero{
+        font-size: 20px;
+    }
+    .field2 label{
+        font-size: 40px;
     }
     .Ubicacion{
         padding-top: 10%;
@@ -936,6 +975,9 @@ input[type="submit"] {
         padding-top: 10%;
         height: auto;
     }
+    h1, h2, h3{
+        font-size: 60px;
+    }
     
     .fondo3 {
         position: absolute;
@@ -949,6 +991,9 @@ input[type="submit"] {
 @media screen and (max-width:485px) {
     .tituloPrincipal{
         font-size: 40px;
+    }
+    .fondo{
+        object-position: right;
     }
     .falsoBoton{
         width: 45%;
