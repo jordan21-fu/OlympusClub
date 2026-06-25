@@ -1,22 +1,23 @@
-html,body{
+html,
+body {
     margin: 0;
     border: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
-*{
+* {
     margin: 0;
 }
 
-.textoInicio{
+.textoInicio {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     position: absolute;
@@ -27,72 +28,79 @@ html,body{
     width: 28%;
     text-align: left;
     text-align: justify;
-    animation: 3s aparecer3 cubic-bezier(.1,.02,.06,.97);
+    animation: 3s aparecer3 cubic-bezier(.1, .02, .06, .97);
 }
 
-@keyframes aparecer{
-    0%{
+@keyframes aparecer {
+    0% {
         opacity: 0;
         transform: translateY(-90px);
     }
-    25%{
+
+    25% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 
-@keyframes aparecer2{
-    0%{
+@keyframes aparecer2 {
+    0% {
         opacity: 0;
         transform: translateY(200px);
 
     }
-    25%{
+
+    25% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 
-@keyframes aparecer3{
-    0%{
+@keyframes aparecer3 {
+    0% {
         opacity: 0;
         transform: translateX(300px);
 
     }
-    25%{
+
+    25% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
 
-@keyframes blur{
-    0%{
+@keyframes blur {
+    0% {
         filter: blur(20px);
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         filter: blur(0);
         transform: scale(1);
     }
 }
 
-.menu{
+.menu {
     padding-top: 10px;
 }
 
-nav{
+nav {
     position: fixed;
     width: calc(100% - 40px);
     background: rgba(0, 0, 0, 0.171);
@@ -100,12 +108,12 @@ nav{
     border-radius: 30px;
     border: 1px inset rgba(255, 255, 255, 0.158);
     margin: 0 20px;
-    animation: 3s aparecer cubic-bezier(.3,.02,.06,.97);
+    animation: 3s aparecer cubic-bezier(.3, .02, .06, .97);
     z-index: 40;
 }
 
-nav ul{
-    
+nav ul {
+
     width: auto;
     margin: 0;
     list-style: none;
@@ -115,22 +123,23 @@ nav ul{
     padding: 10px 0;
 }
 
-nav ul li{
+nav ul li {
     font-size: 30px;
     transition: 0.5s;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     transform: translateY(-5px);
 }
-.primerBloque{
+
+.primerBloque {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
-.fondo{
+.fondo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -143,35 +152,35 @@ nav ul li:hover{
 
 
 /* Desde abajo */
-.abajo{
+.abajo {
     opacity: 0;
     transform: translateY(80px);
     transition: 2s ease;
 }
 
 /* Desde arriba */
-.arriba{
+.arriba {
     opacity: 0;
     transform: translateY(-80px);
     transition: 2s ease;
 }
 
 /* Desde la izquierda */
-.izquierda{
+.izquierda {
     opacity: 0;
     transform: translateX(-80px);
     transition: 2s ease;
 }
 
 /* Desde la derecha */
-.derecha{
+.derecha {
     opacity: 0;
     transform: translateX(80px);
     transition: 2s ease;
 }
 
 /* Estado visible */
-.visible{
+.visible {
     opacity: 1;
     transform: translate(0, 0);
 }
@@ -181,7 +190,7 @@ nav ul li:hover{
 
 
 
-.falsoBoton{
+.falsoBoton {
     position: absolute;
     width: 15%;
 
@@ -198,10 +207,10 @@ nav ul li:hover{
     bottom: 8%;
     left: 25%;
     border-radius: 60px;
-    animation: 3s aparecer2 cubic-bezier(.1,.02,.06,.97);
+    animation: 3s aparecer2 cubic-bezier(.1, .02, .06, .97);
 }
 
-div  .falsoBoton:hover {
+div .falsoBoton:hover {
     border: 2px solid #000000;
     outline: 2px solid rgb(255, 202, 27);
     outline-offset: 1px;
@@ -209,29 +218,32 @@ div  .falsoBoton:hover {
 
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
     color: rgb(255, 255, 255);
     transition: transform 1s ease;
 }
-a{
+
+a {
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     color: #ffbb1c;
     text-decoration-color: #ffffff;
 }
 
-.bloqueDos{
+.bloqueDos {
     width: 100%;
     height: 210vh;
     position: relative;
     overflow: hidden;
 
 }
-.seccionCambio{
+
+.seccionCambio {
     width: 100%;
     height: auto;
     align-items: center;
@@ -239,15 +251,17 @@ a:hover{
     padding-top: 5%;
     justify-items: center;
 }
-h2#tituloDos{
+
+h2#tituloDos {
     color: white;
     text-align: center;
     font-size: 90px;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 8px;
-    text-shadow:7px 5px #231d03;
+    text-shadow: 7px 5px #231d03;
 }
-.contenedorTexto{
+
+.contenedorTexto {
     width: calc(100% - 4%);
     margin: 0 2%;
     align-content: center;
@@ -258,14 +272,16 @@ h2#tituloDos{
     border: 1px solid rgba(255, 255, 255, 0.181);
 
 }
-.textoDos{
+
+.textoDos {
     color: white;
     word-spacing: 1px;
     text-align: center;
     font-size: 30px;
     padding-bottom: 10px;
 }
-.columnas{
+
+.columnas {
     align-items: center;
     display: flex;
     gap: 20px;
@@ -279,7 +295,8 @@ h2#tituloDos{
     text-align: justify;
     border: 1px solid rgba(255, 255, 255, 0.181);
 }
-.columna{
+
+.columna {
     color: white;
     padding: 5px;
     font-size: 20px;
@@ -287,25 +304,27 @@ h2#tituloDos{
     transition: 0.5s ease;
 }
 
-.separador{
+.separador {
     width: 1%;
     height: 300px;
     margin: 30px auto;
     background: rgb(255, 255, 255);
 }
 
-.columnas div:hover{
+.columnas div:hover {
     transform: scale(1.05);
     margin: 1% 1%;
     padding: 5px 0;
 }
-.titulo{
+
+.titulo {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 7px;
     text-align: center;
     font-size: 40px;
 }
-.columna4{
+
+.columna4 {
     color: white;
     padding: 5px;
     font-size: 20px;
@@ -313,7 +332,7 @@ h2#tituloDos{
     transition: 0.5s ease;
 }
 
-.porqueOlympus{
+.porqueOlympus {
     padding-top: 5%;
     position: relative;
     width: 100%;
@@ -323,22 +342,25 @@ h2#tituloDos{
     overflow: hidden;
 
 }
-.titulo3{
+
+.titulo3 {
     width: 100%;
     text-align: center;
     font-size: 80px;
     margin-bottom: 3%;
-    text-shadow:7px 5px #231d03;
+    text-shadow: 7px 5px #231d03;
 }
-.textoYFilas{
+
+.textoYFilas {
     display: flex;
     width: 95%;
 }
-.textoTres{
 
+.textoTres {
     flex: 2;
     font-size: 20px;
     letter-spacing: 0.1px;
+    text-align: justify;
     padding-right: 5px;
     background-color: #0000004f;
     backdrop-filter: blur(10px);
@@ -347,7 +369,8 @@ h2#tituloDos{
     padding-top: 5px;
     outline: 2px solid rgba(251, 251, 251, 0.058);
 }
-.Filas{
+
+.Filas {
     background-color: #0000004f;
     backdrop-filter: blur(10px);
     flex: 1;
@@ -358,93 +381,103 @@ h2#tituloDos{
     justify-items: center;
     padding: 15px;
     border-radius: 30px;
-    border:2px solid rgba(251, 251, 251, 0.058) ;
+    border: 2px solid rgba(251, 251, 251, 0.058);
 }
-.MiniTitulo{
+
+.MiniTitulo {
     font-size: 30px;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
-    text-decoration:1px rgb(130, 116, 50) underline;
+    text-decoration: 1px rgb(130, 116, 50) underline;
     text-underline-offset: 4px;
     transition: 1s ease;
 }
-.Filas .razon{
+
+.Filas .razon {
     transition: 0.3s ease;
 }
-.Filas .razon:hover{
+
+.Filas .razon:hover {
     transform: scale(1.05);
     margin: 10px 0;
     padding: 10px 5px;
 }
-.Filas div{
+
+.Filas div {
     margin-top: 5px;
     letter-spacing: 1px;
 }
-.Filas .Linea{
+
+.Filas .Linea {
     width: 90%;
     height: 2px;
     background-color: #ffffff;
 }
-.fondo2{
+
+.fondo2 {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.bloqueCuatro{
+
+.bloqueCuatro {
     height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
 
 }
-.TituloYFoto{
+
+.TituloYFoto {
     align-items: center;
 
     position: relative;
     width: 100%;
     height: 100%;
 }
-.TituloFoto{
+
+.TituloFoto {
     padding-top: 2%;
     text-align: center;
     width: 100%;
     color: white;
     font-size: 80px;
-    text-shadow:1px 2px 2px #ffbb1c;
+    text-shadow: 1px 2px 2px #ffbb1c;
     text-shadow:
-    3px 3px 5px #000,
-    0 0 15px rgba(255, 190, 50, 0.7);
+        3px 3px 5px #000,
+        0 0 15px rgba(255, 190, 50, 0.7);
 }
 
-.Foto{
+.Foto {
     display: grid;
     width: 100%;
     justify-items: center;
     position: relative;
 }
-.Horario{
+
+.Horario {
     position: absolute;
     width: 50%;
     right: 0%;
     left: 25%;
     border-radius: 60px;
-    filter: drop-shadow(-1px 1px 3px #ffffff)
-    drop-shadow(0 0 15px rgba(255, 190, 50, 0.7));
+    filter: drop-shadow(-1px 1px 3px #ffffff) drop-shadow(0 0 15px rgba(255, 190, 50, 0.7));
     transition: transform 0.5s ease;
 }
 
-.Horario:hover{
+.Horario:hover {
     transform: translateY(-10px);
     filter: drop-shadow(0 0 17px black);
 }
 
-.Ubicacion{
+.Ubicacion {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
-.fondo3{
+
+.fondo3 {
     filter: blur(4px);
     scale: 1.1;
     position: absolute;
@@ -453,16 +486,17 @@ h2#tituloDos{
     object-fit: cover;
     object-position: left;
 }
-.fondo4{
+
+.fondo4 {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: rotateX(180deg) ;
+    transform: rotateX(180deg);
 
 }
 
-.marquee{
+.marquee {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -471,7 +505,7 @@ h2#tituloDos{
     padding-bottom: 0;
 }
 
-.textoLateral{
+.textoLateral {
     position: absolute;
     right: 0;
     top: 0;
@@ -479,45 +513,48 @@ h2#tituloDos{
     overflow: hidden;
 }
 
-.textoLateralContenido{
+.textoLateralContenido {
     writing-mode: vertical-rl;
     white-space: nowrap;
     justify-content: end;
 
-    font-size: 140px;
+    font-size: 120px;
     font-family: 'Bebas Neue', sans-serif;
     color: rgba(255, 188, 63, 0.411);
 
-    animation: moverVertical 20s linear infinite;
+    animation: moverVertical 25s linear infinite;
 }
 
-@keyframes moverVertical{
-    from{
+@keyframes moverVertical {
+    from {
         transform: translateY(0);
     }
-    to{
+
+    to {
         transform: translateY(-50%);
     }
 }
-.marquee-content{
+
+.marquee-content {
     display: inline-block;
     color: #ffbc3fad;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     letter-spacing: 5px;
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 30s linear infinite;
 }
 
-@keyframes scrollText{
-    from{
-        transform: translateX(0);
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
     }
-    to{
-        transform: translateX(-50%);
+
+    100% {
+        transform: translateX(-50.4%);
     }
 }
 
-.ubicacionTitulo{
+.ubicacionTitulo {
     position: relative;
     color: #ffffff;
     width: 100%;
@@ -527,20 +564,21 @@ h2#tituloDos{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 5px;
 }
-.ubicacion{
+
+.ubicacion {
     width: 100%;
     padding: 80px 0;
     text-align: center;
     color: white;
 }
 
-.tituloMapa{
+.tituloMapa {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
     margin-bottom: 30px;
 }
 
-.mapa{
+.mapa {
     position: relative;
     width: 80%;
     height: 65%;
@@ -548,26 +586,27 @@ h2#tituloDos{
     border-radius: 30px;
     overflow: hidden;
 
-    border: 2px solid rgba(255,255,255,.15);
+    border: 2px solid rgba(255, 255, 255, .15);
 
     box-shadow:
-        0 0 20px rgba(255,188,63,.3),
-        0 0 60px rgba(255,188,63,.15);
+        0 0 20px rgba(255, 188, 63, .3),
+        0 0 60px rgba(255, 188, 63, .15);
 }
 
-.Linea2{
+.Linea2 {
     width: 2px;
     height: 30px;
     margin: auto 0;
     background-color: #ffffff;
 }
 
-.mapa iframe{
+.mapa iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
-.UbicacionEscrito{
+
+.UbicacionEscrito {
     position: relative;
     width: 100%;
     text-align: center;
@@ -576,21 +615,24 @@ h2#tituloDos{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 4px;
 }
-.UbicacionEscrito2{
+
+.UbicacionEscrito2 {
     position: relative;
     width: 100%;
     text-align: center;
     color: #ffffff;
     font-size: 30px;
 }
-.Contacto{
+
+.Contacto {
     width: 100%;
     position: relative;
     height: 100vh;
     align-content: center;
-    justify-content: center ;
+    justify-content: center;
 }
-.ContactoTitulo{
+
+.ContactoTitulo {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 5px;
     position: relative;
@@ -600,19 +642,20 @@ h2#tituloDos{
     font-size: 90px;
 
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-.menu-btn{
+.menu-btn {
     display: none;
     font-size: 35px;
     cursor: pointer;
@@ -620,7 +663,7 @@ h2#tituloDos{
 }
 
 
-.TextoContacto{
+.TextoContacto {
     letter-spacing: 2px;
     position: relative;
     text-align: center;
@@ -633,7 +676,8 @@ h2#tituloDos{
     border-radius: 30px;
     padding: 10px 0;
 }
-span.WhatsApp{
+
+span.WhatsApp {
     position: relative;
     color: white;
     text-align: center;
@@ -642,10 +686,12 @@ span.WhatsApp{
     padding-bottom: 0;
     font-size: 50px;
 }
-.NumeroWhats{
+
+.NumeroWhats {
     font-size: 40px;
 }
-.contactosVarios{
+
+.contactosVarios {
     margin-top: 15px;
     width: 85.5%;
     border-radius: 50px;
@@ -657,7 +703,7 @@ span.WhatsApp{
     margin: 0 auto;
 }
 
-#form{
+#form {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -666,17 +712,20 @@ span.WhatsApp{
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
 .field {
     margin-bottom: 5px;
     text-align: center;
     margin-top: 10px;
 }
-.Numero{
+
+.Numero {
     display: block;
     margin: 0;
     font-size: 25px;
     color: rgba(255, 255, 255, 0.433);
 }
+
 .field label {
     display: block;
     font-size: 50px;
@@ -684,10 +733,12 @@ span.WhatsApp{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 3px;
 }
-.field2{
+
+.field2 {
     grid-column: 1 / -1;
     text-align: center;
 }
+
 .field input {
     display: block;
     width: 400px;
@@ -697,18 +748,22 @@ span.WhatsApp{
     padding: 10px;
     border: none;
 }
-textarea{
+
+textarea {
     outline: 4px solid rgba(255, 166, 0, 0.186);
     grid-column: 2;
 }
-.field2{
-    position: relative;;
+
+.field2 {
+    position: relative;
+    ;
     color: white;
     margin-top: 10px;
     grid-column: 1 / -1;
     width: 100%;
 }
-.field2 label{
+
+.field2 label {
     display: block;
     font-size: 50px;
     color: #ffffff;
@@ -716,22 +771,26 @@ textarea{
     letter-spacing: 3px;
     text-align: center;
 }
-input{
+
+input {
     outline: 4px solid rgba(255, 166, 0, 0.186);
 }
-input:focus{
+
+input:focus {
     outline: 3px solid orange;
 }
 
-textarea:focus{
+textarea:focus {
     outline: 3px solid orange;
-    
+
 }
-.Contacto{
+
+.Contacto {
     height: auto;
     padding-bottom: 2%;
     overflow: hidden;
 }
+
 input[type="submit"] {
     display: block;
     padding: 6px 30px;
@@ -745,12 +804,14 @@ input[type="submit"] {
     cursor: pointer;
     margin: 15px 0;
 }
-.Foto{
+
+.Foto {
     text-align: center;
     flex-direction: column-reverse;
 }
+
 @media screen and (max-width:1700px) {
-    .tituloPrincipal{
+    .tituloPrincipal {
         font-size: 55px;
         text-align: left;
         width: 25%;
@@ -759,63 +820,75 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1148px) {
-    .fondo{
+    .fondo {
         object-position: 0 0 -2500px 0;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
-    ul#menu.menu.desactivado{
+
+    ul#menu.menu.desactivado {
         display: none;
     }
-    nav{
+
+    nav {
         width: 100%;
         border-radius: 0;
     }
-    .menu-btn{
+
+    .menu-btn {
         position: static;
         z-index: 99;
         display: block;
         padding-left: 10%;
     }
-    .menu.active{
+
+    .menu.active {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
-        padding: 20px ;
+        padding: 20px;
         margin: 0;
         z-index: 10;
         border-radius: 20px;
-        justify-content:center;
+        justify-content: center;
         gap: 10px;
     }
-    .menu.active li{
+
+    .menu.active li {
         flex-wrap: wrap;
         padding: 10px;
         background: #000000ef;
         width: 40%;
-        margin:0;
+        margin: 0;
         border-radius: 40px;
         font-size: 24px;
         text-align: center;
         border: 2px solid rgba(221, 169, 27, 0.726);
-        outline:1px solid #000;
+        outline: 1px solid #000;
     }
-    nav ul li{
+
+    nav ul li {
         margin-bottom: 0;
     }
-    nav, nav ul, nav ul li{
+
+    nav,
+    nav ul,
+    nav ul li {
         margin: 0;
     }
-    ul#menu.menu.active{
+
+    ul#menu.menu.active {
         margin: 0;
         padding: 0;
         border: 0;
     }
-    .Linea2{
+
+    .Linea2 {
         display: none;
         width: 0;
         height: 0;
@@ -823,52 +896,59 @@ input[type="submit"] {
 }
 
 @media screen and (max-width:1044px) {
-    .tituloPrincipal{
+    .tituloPrincipal {
         font-size: 50px;
         text-align: left;
         width: 50%;
         left: 8%;
     }
-    
-    .falsoBoton{
+
+    .falsoBoton {
         width: 40%;
         left: 8%;
     }
-    #tituloDos{
+
+    #tituloDos {
         font-size: 50px !important;
     }
-    .textoDos{
+
+    .textoDos {
         font-size: 20px;
         letter-spacing: 1.5px;
     }
-    .separador{
+
+    .separador {
         display: none;
     }
-    .columnas{
+
+    .columnas {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         height: auto;
         position: relative;
         letter-spacing: 1.2px;
         width: 95%;
     }
-    .porqueOlympus{
+
+    .porqueOlympus {
         padding-top: 10%;
         margin-top: 20px;
         display: block;
     }
-    .titulo3{
+
+    .titulo3 {
         display: block;
         font-size: 40px;
     }
-    .bloqueDos{
+
+    .bloqueDos {
         display: flex;
         flex-direction: column;
         height: auto;
         padding-bottom: 2%;
     }
-    
-    .textoTres{
+
+    .textoTres {
         letter-spacing: 1.5px;
         font-size: 16px;
         height: auto;
@@ -876,65 +956,80 @@ input[type="submit"] {
         align-content: center;
         margin-bottom: 10px;
     }
-    .textoYFilas{
+
+    .textoYFilas {
         flex-direction: column;
     }
-    .Filas{
+
+    .Filas {
         text-align: justify;
         font-size: 14px;
     }
-    .field2{
+
+    .field2 {
         justify-items: center;
     }
-    #message{
+
+    #message {
         margin: 0 auto;
         width: 60%;
     }
-    .TituloFoto{
+
+    .TituloFoto {
         margin: 0;
     }
-    .Horario{
+
+    .Horario {
         margin-top: 10%;
         width: 90%;
         left: 5%;
     }
-    .titulo{
+
+    .titulo {
         font-size: 25px;
     }
-    .columna{
+
+    .columna {
         position: relative;
         width: 100%;
         font-size: 13px;
         text-align: justify;
     }
-    .columna4{
+
+    .columna4 {
         position: relative;
         width: 100%;
-        font-size: 15px;
+        font-size: 13px;
+        margin-bottom: 40px;
     }
-    .contactosVarios{
+
+    .contactosVarios {
         align-items: center;
         justify-content: center;
     }
 
-    #form{
+    #form {
         padding-left: 0 !important;
         width: 100%;
         grid-template-columns: 1fr;
         margin: 0 auto;
-        row-gap: 15px  ;
+        row-gap: 15px;
     }
-    .contenedorTexto{
+
+    .contenedorTexto {
         width: 90%;
         padding-top: 10%;
     }
-    .tituloHorario{
+
+    .tituloHorario {
         padding-top: 5%;
         font-size: 60px;
     }
-    .TextoContacto{
+
+    .TextoContacto {
         font-size: 17px;
     }
+
     .field input {
         display: block;
         width: 250px;
@@ -946,6 +1041,7 @@ input[type="submit"] {
         margin-left: 0;
         border: none;
     }
+
     .field label {
         display: block;
         font-size: 30px;
@@ -953,32 +1049,41 @@ input[type="submit"] {
         font-family: 'Bebas Neue', sans-serif;
         letter-spacing: 3px;
     }
-    .field .WhatsApp{
+
+    .field .WhatsApp {
         font-size: 30px;
     }
-    .field .Numero{
+
+    .field .Numero {
         font-size: 20px;
     }
-    .field2 label{
+
+    .field2 label {
         font-size: 40px;
     }
-    .Ubicacion{
+
+    .Ubicacion {
         padding-top: 10%;
         isolation: isolate;
     }
-    .UbicacionEscrito2{
+
+    .UbicacionEscrito2 {
         font-size: 20px;
         padding: 10px 0;
     }
-    .ContactoTitulo{
+
+    .ContactoTitulo {
         font-size: 70px;
         padding-top: 10%;
         height: auto;
     }
-    h1, h2, h3{
+
+    h1,
+    h2,
+    h3 {
         font-size: 60px;
     }
-    
+
     .fondo3 {
         position: absolute;
         top: 0;
@@ -988,14 +1093,17 @@ input[type="submit"] {
         object-fit: cover;
     }
 }
+
 @media screen and (max-width:485px) {
-    .tituloPrincipal{
+    .tituloPrincipal {
         font-size: 40px;
     }
-    .fondo{
+
+    .fondo {
         object-position: right;
     }
-    .falsoBoton{
+
+    .falsoBoton {
         width: 45%;
         font-size: 30px;
     }
